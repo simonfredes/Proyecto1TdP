@@ -1,10 +1,6 @@
 class pacienteTest{
 	public static void main (String [] args){
-<<<<<<< HEAD
-		Paciente jorge= new Paciente("Leo","sempre",M,1999);
-=======
 		Paciente jorge= new Paciente("Joaquin","sempre",M,1999);
->>>>>>> 5c2d2076cc583fbb2e8b6d21bfd3df97d1cfefd4
 
 		System.out.println(" El nombre es: " + jorge.obtenerNombre() ");
 		System.out.println(" La obra social es: " + jorge.obtenerObraSocial(););
