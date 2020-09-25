@@ -1,0 +1,38 @@
+class Paciente{ 
+    //Atributos de instancia 
+    protected String nombre;
+    protected String obraSocial;
+    protected char sexo;
+    protected int fechaNac;
+	
+    public Paciente (String nombre, String obraSocial, char sexo, int fechaNac){
+	this.nombre=nombre;
+	this.obraSocial=obraSocial;
+	this.sexo= sexo;
+	this.fechaNac=fechaNac;
+    }
+    //Consultas 
+    public boolean igual(Paciente pac){
+        return nombre==pac.obtenerNombre() && obraSocial==pac.obtenerObraSocial() && sexo==pac.obtenerSexo() && fechaNac==pac.obtenerFechaNac();
+    } 
+
+    public String obtenerNombre(){
+        return nombre;
+    } 
+
+    public String obtenerObraSocial(){
+        return obraSocial;
+    } 
+
+    public char obtenerSexo(){ 
+        return sexo;
+    } 
+
+    public Fecha pbtenerFechaNac(){ 
+        return fechaNac;
+    } 
+
+    public int edad(Fecha act){ 
+        return fechaNac-2020;
+    } 
+}
